@@ -133,7 +133,7 @@ To update HyDE, you will need to pull the latest changes from GitHub and restore
 
 ```shell
 cd ~/HyDE/Scripts
-git pull origin master
+git fetch upstream --depth 1
 ./install.sh -r
 ```
 
