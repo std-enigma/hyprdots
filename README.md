@@ -83,7 +83,7 @@ pacman -S --needed git base-devel
 git clone --depth 1 https://github.com/std-enigma/hyprdots ~/HyDE
 cd ~/HyDE
 git remote add upstream https://github.com/HyDE-Project/HyDE.git
-git fetch upstream
+git fetch upstream --depth 1
 cd ~/HyDE/Scripts
 ./install.sh pkg_user.lst
 ```
