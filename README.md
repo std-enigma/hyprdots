@@ -84,6 +84,7 @@ git clone --depth 1 https://github.com/std-enigma/hyprdots ~/HyDE
 cd ~/HyDE
 git remote add upstream https://github.com/HyDE-Project/HyDE.git
 git fetch upstream
+cd ~/HyDE/Scripts
 ./install.sh pkg_user.lst
 ```
 <!--
