@@ -79,11 +79,10 @@ For NixOS support there is a separate project being maintained @ [Hydenix](https
 To install, execute the following commands:
 
 ```shell
-pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/std-enigma/hyprdots ~/HyDE
-cd ~/HyDE
-git remote add upstream https://github.com/HyDE-Project/HyDE.git
-git fetch upstream --depth 1
+sudo pacman -S --needed git base-devel && \
+git clone --depth 1 https://github.com/std-enigma/hyprdots ~/HyDE && \
+git -C ~/HyDE remote add upstream https://github.com/HyDE-Project/HyDE.git && \
+git -C ~/HyDE fetch upstream --depth 1
 cd ~/HyDE/Scripts
 ./install.sh pkg_user.lst
 ```
