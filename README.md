@@ -80,22 +80,12 @@ To install, execute the following commands:
 
 ```shell
 pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
-cd ~/HyDE/Scripts
-./install.sh
+git clone --depth 1 https://github.com/std-enigma/hyprdots ~/HyDE
+cd ~/HyDE
+git remote add upstream https://github.com/HyDE-Project/HyDE.git
+git fetch upstream
+./install.sh pkg_user.lst
 ```
-
-> [!TIP]
-> You can also add any other apps you wish to install alongside HyDE to `Scripts/pkg_user.lst` and pass the file as a parameter to install it like so:
->
-> ```shell
-> ./install.sh pkg_user.lst
-> ```
-
-> [!IMPORTANT]
-> Refer your list from `Scripts/pkg_extra.lst`
-> or you can `cp Scripts/pkg_extra.lst Scripts/pkg_user.lst` if you wish to install all extra packages.
-
 <!--
 
 As a second install option, you can also use `Hyde-install`, which might be easier for some.
